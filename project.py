@@ -5,9 +5,8 @@ t = turtle.Turtle()
 w.setup(width=1000, height=800)
 w.bgcolor("skyblue")
 w.title("Turtle Project")
-x_coords = [ 50, 150, ]
-y_coords = [-50, -250]
-z_coords = [-10,300]
+x_coords = [ 80, 150, ]
+y_coords = [-80, -250]
 for _ in range(5):
     # Select random values independently
     random_x = random.choice(x_coords)
@@ -48,7 +47,7 @@ for i in range(1):
         t.end_fill()
 #post 2
         t.penup()
-        t.goto(z_coords[0],-252)
+        t.goto(300,-252)
         t.pendown()    
         t.begin_fill()
         t.color("white", "white")
@@ -66,7 +65,7 @@ for i in range(1):
         t.end_fill()
 #post 3
         t.penup()
-        t.goto(-150,-252)
+        t.goto(-300,-252)
         t.pendown()    
         t.begin_fill()
         t.color("white", "white")
@@ -136,7 +135,16 @@ for i in range(1):
         t.right(90)
         t.forward(180)
         t.end_fill()
+        sun = turtle.Turtle()
+#end of frense
+sun.color("red", "yellow")
+sun.speed(10)
+sun.begin_fill()
+for i in range(10):
+    sun.forward(200)
+    sun.left(280)
+sun.end_fill()
         
-        w.exitonclick()
+w.exitonclick()
        
 
